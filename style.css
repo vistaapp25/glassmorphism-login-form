@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+.glass-card {
+    width: 380px;
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opcaity 0;
+        transform: scale(.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 14px 45px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: background .3s ease;
+}
+.input-box input:focus {
+    background: rgba(255, 255, 255, 0.25);
+}
+.input-box i{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #ddd;
+    font-size: 17px;
+}
+.btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #3b82f6, #ddd);
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(147, 51, 234, 0.4);
+}
+.bottom-text {
+    margin-top: 15px;
+    text-align: center;
+    color: #ddd;
+    font-size: 14px;
+}
+.bottom-text a {
+    color: #fff;
+    text-decoration: underline;
+}
